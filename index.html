@@ -59,7 +59,44 @@
             <video width="320" height="240" controls src="video/How to run business meetings.mp4"></video>
             <hr>
             <h2>Miscellaneous Elements</h2>
-            
+                <summary>This is a section containing a bunch of extra features for the assignment outside the meeting minutes context.</summary>
+                <form action="Submit" name="general">
+                    <fieldset>
+                        <label for="fname" >First name:</label><br>
+                        <input type="text" name="general"><br>
+                        <p>Choose an animal:</p>
+                        <input type="radio" name="general">
+                        <label>Shark</label><br>
+                        <input type="radio" name="general">
+                        <label>Lion</label><br>
+                        <input type="radio" name="general">
+                        <label>Owl</label><br>
+                        <br>
+                        <label for="currDate">Enter Today's Date:</label>
+                        <input type="date" name="general" id="currDate">
+                        <br>
+                        <label for="feedback">Feedback on my humble site:</label>
+                        <br>
+                        <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                        <br>
+                        <label for="snackChoice">Choose a snack</label>
+                        <input list="snackChoices" id="snackChoice" name="snackChoice">
+                        <datalist id="snackChoices">
+                            <option value="Pringles"></option>
+                            <option value="Doritos"></option>
+                            <option value="Trail Mix"></option>
+                        </datalist>
+                        <br>
+                        <label for="games">Select a game character:</label>
+                        <select name="games" id="games">
+                            <option value="Mario">Mario</option>
+                            <option value="PacMan">PacMan</option>
+                            <option value="Sonic">Sonic</option>
+                        </select>
+                        <br>
+                        <button type="button">Submit!</button>
+                    </fieldset>
+                </form>
             <br>
             <details>The following html page is a school project</details>
         </main>
