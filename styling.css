@@ -1,12 +1,18 @@
+:root{
+    --cool-color: #d6f1f6
+}
 h1 { /* apply navy color to the h1 element using the different methods */
     color: navy;
     color: (0, 0, 128);
     color: (0, 0, 128, 0);
     color: #000080;
 }
-h2{
+h2{ /* use a wider gamut color for h2*/
     color: color(srgb 0.8 0.2 0);
 }
-h3{
+h3{ /* use a mix of colors with color mix for h3*/
     color: color-mix(in srgb, red, blue);
+}
+section{ /* apply a background style using a var with a fallback*/
+    background-color: var(--cool-color, lightblue);
 }
