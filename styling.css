@@ -15,4 +15,54 @@ h3{ /* use a mix of colors with color mix for h3*/
 }
 section{ /* apply a background style using a var with a fallback*/
     background-color: var(--cool-color, lightblue);
+
+
+    /*relative measurements*/
+    font-size: 1rem;
+    padding: 1em;
+    margin: 2%;
+
+
+    /*longform margin changes*/
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    /*shotform margin changes*/
+    margin: 100px 100px 100px 100px;
+
+    /*auto margin change*/
+    margin: auto;
+
+    /*longform padding changes*/
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    /*shortform padding changes*/
+    padding: 16px, 16px, 16px, 16px;
+
+
+
+
+
+}
+p{
+    /*absolute measurements*/
+    font-size: 18px;
+    padding: 1cm;
+    margin: 25mm;
+
+    /*borders*/
+    border-style: dotted;
+    border-color: blue;
+    border-width: 10px;
+    border-radius: 0%;
+
+    /*text decoration*/
+    color: darkred;
+    text-decoration: underline;
+    text-align: center;
 }
