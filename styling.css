@@ -6,12 +6,30 @@ h1 { /* apply navy color to the h1 element using the different methods */
     color: (0, 0, 128);
     color: (0, 0, 128, 0);
     color: #000080;
+
+    /*set display*/
+    display: block;
+
+    /*set sizing*/
+    height: 100px;
+    width: 100px;
+    max-width: 500px;
+    min-width: 50px;
 }
 h2{ /* use a wider gamut color for h2*/
     color: color(srgb 0.8 0.2 0);
+
+    /*set display*/
+    display: inline-block;
 }
 h3{ /* use a mix of colors with color mix for h3*/
     color: color-mix(in srgb, red, blue);
+
+    /*set display*/
+    display: inline;
+}
+h3:active{
+    color:green;
 }
 section{ /* apply a background style using a var with a fallback*/
     background-color: var(--cool-color, lightblue);
@@ -44,10 +62,14 @@ section{ /* apply a background style using a var with a fallback*/
     /*shortform padding changes*/
     padding: 16px, 16px, 16px, 16px;
 
+    /*set position*/
+    position: static;
 
 
 
-
+}
+section:hover{
+    background-color: aquamarine;
 }
 p{
     /*absolute measurements*/
@@ -65,4 +87,23 @@ p{
     color: darkred;
     text-decoration: underline;
     text-align: center;
+
+    /*position*/
+    position: relative;
+
+}
+pre{
+    display: none;
+}
+#flexSection{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+#gridSection{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    grid-auto-rows: minmax(100px, auto);
 }
