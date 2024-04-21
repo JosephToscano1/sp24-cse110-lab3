@@ -6,8 +6,8 @@
 }
 element h1 { /* apply navy color to the h1 element using the different methods */
     color: navy;
-    color: (0, 0, 128);
-    color: (0, 0, 128, 0);
+    color: rgb(0, 0, 128);
+    color: rgba(0, 0, 128, 0);
     color: #000080;
 
     /*set display*/
@@ -20,13 +20,19 @@ element h1 { /* apply navy color to the h1 element using the different methods *
     min-width: 50px;
 }
 [title~="subheader"]{ /* use a wider gamut color for h2*/
-    color: color(srgb 0.8 0.2 0);
+
 
     /*set display*/
     display: inline-block;
 }
+@media (color-gamut: srgb)
+{
+    h2{
+        background: #f4ae8a;
+    }
+}
 h3{ /* use a mix of colors with color mix for h3*/
-    color: color-mix(in srgb, red, blue);
+    color: color-mix(red, blue);
 
     /*set display*/
     display: inline;
@@ -63,7 +69,7 @@ section{ /* apply a background style using a var with a fallback*/
     padding-right: 16px;
 
     /*shortform padding changes*/
-    padding: 16px, 16px, 16px, 16px;
+    padding: 16px 16px 16px 16px;
 
     /*set position*/
     position: static;
