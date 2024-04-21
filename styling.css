@@ -1,7 +1,10 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
 :root{
     --cool-color: #d6f1f6
 }
-h1 { /* apply navy color to the h1 element using the different methods */
+element h1 { /* apply navy color to the h1 element using the different methods */
     color: navy;
     color: (0, 0, 128);
     color: (0, 0, 128, 0);
@@ -16,7 +19,7 @@ h1 { /* apply navy color to the h1 element using the different methods */
     max-width: 500px;
     min-width: 50px;
 }
-h2{ /* use a wider gamut color for h2*/
+[title~="subheader"]{ /* use a wider gamut color for h2*/
     color: color(srgb 0.8 0.2 0);
 
     /*set display*/
@@ -95,12 +98,44 @@ p{
 pre{
     display: none;
 }
+/*misc selectors*/
+pre, body {
+    display: block;
+    color: black;
+}
+section p{
+    background-color: aliceblue;
+}
+section > li{
+    background-color: bisque;
+}
+section + section{
+    background-color: azure;
+}
+input ~ input{
+    background-color: pink;
+}
+p.blueOne{
+    background-color: blue;
+}
+section:has(+ section)
+{
+    background-color: burlywood;
+}
+&{
+    font-weight: bold;
+}
+&:hover{
+    font-weight: bolder;
+}
+/*display certain sections using flexbox*/
 #flexSection{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex-flow: row wrap;
 }
+/*display certain sections using grid*/
 #gridSection{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -116,6 +151,7 @@ body{
     font-family: 'Roboto';
 
 }
+/*include a media query*/
 @media (width >= 500px)
 {
     #flexSection{
