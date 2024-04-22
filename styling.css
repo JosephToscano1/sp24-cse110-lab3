@@ -32,7 +32,7 @@ element h1 { /* apply navy color to the h1 element using the different methods *
     }
 }
 h3{ /* use a mix of colors with color mix for h3*/
-    color: color-mix(in lch, plum 40%, pink);
+    color: color-mix(in srgb, #34c9eb 20%, white);
 
     /*set display*/
     display: inline;
