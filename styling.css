@@ -30,12 +30,12 @@ element h1 { /* apply navy color to the h1 element using the different methods *
     h2{
         background: #f4ae8a;
     }
-}
-h3{ /* use a mix of colors with color mix for h3*/
-    color: color-mix(in srgb, #34c9eb 20%, white);
-
-    /*set display*/
-    display: inline;
+    h3{ /* use a mix of colors with color mix for h3*/
+        color: color-mix(in srgb, #e12121 80%, white);
+    
+        /*set display*/
+        display: inline;
+    }
 }
 h3:active{
     color:green;
