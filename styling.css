@@ -31,7 +31,7 @@ element h1 { /* apply navy color to the h1 element using the different methods *
         background: #f4ae8a;
     }
     h3{ /* use a mix of colors with color mix for h3*/
-        color: color-mix(in srgb, #e12121 80%, white);
+        color: color-mix(in srgb, red 50%, blue 50%);
     
         /*set display*/
         display: inline;
