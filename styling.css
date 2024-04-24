@@ -128,12 +128,6 @@ section:has(+ section)
 {
     background-color: burlywood;
 }
-&{
-    font-weight: bold;
-}
-&:hover{
-    font-weight: bolder;
-}
 /*display certain sections using flexbox*/
 #flexSection{
     display:flex;
@@ -152,6 +146,9 @@ section:has(+ section)
     font-family: "Jersey 25", sans-serif;
     font-weight: 400;
     font-style: normal;
+    &:hover {
+        font-weight: bolder;
+    }
   }  
 body{
     font-family: 'Roboto';
